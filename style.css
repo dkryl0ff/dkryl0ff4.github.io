@@ -1,109 +1,51 @@
-html {
-	height: 100%;
-}
-
-body {
-	margin: auto;
-}
-
-.head__item {
-	color: #7c7c7c;
-}
-
-ul, li{
+ul,
+li {
 	padding: 0;
 	text-decoration: none;
 	list-style: none;
 }
 
-.header__nav {
-	display: flex;
-	justify-content: space-between;
-	padding: 40px;
+main {
+	background-color: beige;
 }
 
-.header {
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	padding-bottom: 20px;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html,
+body {
+	font-family: 'Times new roman', 'Times new roman', bold;
+}
+
+header {
 	background: linear-gradient(grey, white);
 }
 
-footer {
-	width: 100%;
-	background-color: grey;
-    font-size: 25px;
-    background: linear-gradient(white, grey);
+header * {
+	color: black;
 }
 
-.head__list {
-	display: flex;
-	gap: 50px;
-	display: none;
-}
-
-.head__item {
-	transition: border-bottom 0.4s ease;
-}
-
-.h1__PC {
-	display: none;
-}
-
-ul {
-	list-style: none;
-	padding-right: 40px;
-}
-
-.name {
-	text-align: center;
-}
-
-main {
+.content {
 	background-color: burlywood;
-	max-width: 100%;
-	margin: auto;
-	display: flex;
-	flex-direction: column;
+}
+.logo img {
+	height: 50px;
+}
+.h-40px {
+	height: 40px;
+}
+.mw-960px {
+	max-width: 960px;
 }
 
-ol {
-	list-style-type: none;
-	padding-left: 0; 
-}
-
-.container__table {
-	order: 0;
-}
-
-.container__links {
-	order: 1;
-}
-
-.container__form {
-	order: 2;
-}
-
-table {
-	width: 40%;
-	border-collapse: collapse;
+.t1 td,
+.t1 th {
+	width: 40px;
+	border: 1px black solid;
 	text-align: center;
 }
-
-td {
-	border: 2px solid black;
-	padding: 10px;
-	font-size: 18px;
-}
-
-th {
-	border: 2px solid black;
-	padding: 10px;
-	font-size: 18px;
-	background-color: white;
-}
-
 td:nth-child(odd) {
 	background-color: rgb(33, 203, 69);
 	color: white;
@@ -113,38 +55,24 @@ td:nth-child(even) {
 	background-color: rgb(10, 167, 136);
 	color: blue;
 }
-
-a {
-	text-decoration: none;
+footer {
+	background: linear-gradient(white, grey);
+	align-items: left;
+	text-align: left;
+	
 }
 
-header {
-	background-color: #7c7c7c;
-}
-
-@media (min-width: 800px) {
-	main {
-		background-color: burlywood;
+@media screen and (min-width: 768px) {
+	.mw-md-960px {
 		max-width: 960px;
-		margin: auto;
-		display: block;
 	}
-
-	.h1__PC {
-		display: contents;
+	.h-md-100 {
+		height: 100%;
 	}
-
-	.head__item__mobile {
-		display: none;
+	.h-md-44px {
+		height: 44px;
 	}
-
-	.h1__mobile {
-		display: none;
-	}
-
-	.head__list {
-		display: flex;
-		gap: 50px;
-		display: content;
+	.logo img {
+		height: 100%;
 	}
 }
