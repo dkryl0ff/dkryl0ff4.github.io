@@ -9,11 +9,7 @@ main {
 	background-color: beige;
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
+
 html,
 body {
 	font-family: 'Times new roman', 'Times new roman', bold;
